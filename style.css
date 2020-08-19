@@ -1,0 +1,227 @@
+body{
+  background:#FF8A80;
+  font-family:"Montserrat";
+  
+}
+.container{
+  width:500px;
+  height:500px;
+ background-color:black;
+  color:black;
+  margin:auto;
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  border-radius:50%;
+}
+#name{
+  margin-top:-22px;
+  text-align:center;
+ 
+}
+#holder{
+  color:black;
+  margin-top:50px;
+}
+.controls{
+  width:230px;
+  height:230px;
+  background-color:#CCFF90;
+  
+  margin:auto;
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  border-radius:50%;
+  border:10px solid black;
+}
+
+  
+#green{
+  float:top left;
+  border:5px solid #424242;
+  border-top-left-radius:100%;
+  width:250px;
+  height:250px;
+  background-color:rgba(0,255,0,0.5);
+}
+
+#yellow{
+   
+  
+  float:right ;
+  margin-top:-500px;
+margin-right:0px;
+  border:5px solid #424242;
+  border-top-right-radius:100%;
+  
+  width:250px;
+  height:250px;
+  background-color:rgba(255,255,0,0.5);
+}
+#red{
+    float:bottom left;
+
+  border:5px solid #424242;
+  border-bottom-left-radius:100%;
+  width:250px;
+  height:250px;
+  background-color:rgba(255,0,0,0.5);
+}
+#blue{  float:right ;
+margin-top:-250px;
+  margin-right:0px;
+
+  border:5px solid #424242;
+  border-bottom-right-radius:100%;
+  width:250px;
+  height:250px;
+  background-color:rgba(0,0,255,0.5);
+}
+#center-circle{
+  margin-top:50px;
+}
+#d{
+   text-align:center;
+  margin-top:-10px;
+}
+.display{
+  text-align:center;
+  background-color:#E0E0E0;
+  width:50px;
+  height:30px;
+  font-size:20px;
+  margin:3px auto;
+  border:1px solid red;
+  font-weight:bold;
+}
+.switch{
+  width:85px;
+  height:40px;
+  font-size:1rem;
+  margin-right:15px;
+}
+.game{
+  margin:8px 8px 8px 8px;
+  border:1px #3E2723;
+  border-radius:50%;
+  outline-width:4px;
+  width:30px;
+  height:30px;
+  outline-color:black;
+  outline-style:double;
+}
+.clickable{
+  pointer-events : auto;
+  cursor:pointer;
+}
+.unClickable{
+  pointer-events:none;
+}
+.c1{
+  
+    margin-left:-8px;
+}
+.c2{
+   margin-left:20px;
+
+  margin-right:10px;}
+.game:focus{
+  outline:groove;
+}
+.rules{
+  font-weight:bold;
+  font-size:4rem;
+  text-align:center;
+  display:inline-block;
+  margin-top:600px;
+}
+#fun{
+  width:100px;
+  margin:3px auto;
+}
+h2{
+  font-weight:bold;
+  
+}
+.c3{
+  width:40px;
+  margin-right:0px;
+  margin-top:-6px;
+  margin-left:-15px;
+  margin-bottom:3px;
+}
+.c4{
+  width:40px;
+  margin-left:-10px;
+  margin-top:-6px;
+  margin-right:1px;
+    margin-bottom:3px;
+
+}
+.switch{
+  
+ 
+  margin-left:100px;
+  margin-right:50px;
+}
+.rules{
+  margin:auto;
+  position:absolute;
+  bottom:0;
+  right:0px;
+  left:0px;
+  text-align:center;
+}
+p{
+  position:absolute;
+  bottom:0;
+  right:0px;
+  left:0px;
+}
+#play{
+  display:block;
+}
+#hint{
+  display:hidden;
+}
+#wrong{
+  display:hidden;
+}
+#lose{
+  display:hidden;
+}
+@media(max-width:530px){
+  .controls{
+    margin-top:30px;
+  }
+  .container{
+    width:300px;
+    height:300px;
+  }
+ #green{
+  width:150px;
+  height:150px;
+  
+}
+#red{
+    width:150px;
+  height:150px;
+ 
+}
+#yellow{
+    width:150px;
+  height:150px;
+  
+}
+#blue{
+    width:150px;
+  height:150px;
+  
+}
+  
+}
