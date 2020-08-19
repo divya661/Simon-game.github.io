@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SIMON GAME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" id="alarm2" type="audio/mpeg">
+  </audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" id="alarm3" type="audio/mpeg">
+  </audio>
+<audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" id="alarm4" type="audio/mpeg">
+  </audio>
+   </head>
+<div class="container" id="simon">
+  
+
+   <div class="row">
+  <div  class="btn  grid " id="green" onclick="blink(1); ansPush(1); checkMove();"></div>
+  <div class="btn  grid" id="red"  onclick="blink(2); ansPush(2); checkMove();"></div>
+    </div>
+    <div class="row">
+  <div  class="btn  grid" id="yellow"  onclick="blink(3); ansPush(3); checkMove();"></div>
+  <div  class="btn  grid" id="blue" onclick="blink(4); ansPush(4); checkMove();"></div>
+     </div>
+  
+ 
+  <div class="controls">
+    <div class="holder">
+    <div id="center-circle">
+    <h2 class="title" id="name">SIMON</h2>
+      <div id="d">DISPLAY
+    <div class="display" id="level">level</div></div>
+   <div class="row" id="fun">
+     <div class="col-xs-1 c1">
+    START       <button class="game btn btn-primary" id="start" onclick="startGame()" ></button></div> <div class="col-xs-1 c2">STRICT
+    <button class="game btn btn-danger" id="strict" onclick="strictMode()" ></button>
+     </div> 
+    </div>
+      <form>
+    <div class="switch ">
+  <div class="row">
+    <div class="col-xs-1 c3">OFF
+    <input type="radio" value="off"
+     name="switch" onclick="choice(0)" checked/>
+     </div>
+    <div class="col-xs-1 c4">
+      ON  <input type="radio" value="on" name="switch" onclick="choice(1)"/>
+         </div></div>
+      </div></form>
+  </div>
+  </div>
+  
+ </div>
+ 
+ </div>
+<div class="rules">
+  <div id="play">Switch on the button to play<br></div>
+  <div id="hint">Press the Start button to play in normal mode or Strict button to play in strict mode !!!</div>
+  
+  <div id="win">Holla!!! You Won<br></div>
+
+</div>
+<script src = "script.js" type = "text/javascript"></script>
+  </body>
+  </html>
